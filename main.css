@@ -32,11 +32,13 @@ body {
     max-height: 20px;
     transition: 0.4s;
     transform: scale(1.0);
-    padding: 0;
+    padding-left: 20px;
+    margin-top: 30px;
+    
     
 }
 .menu{
-    color: #D1004C;
+    color: #f1f1f19d;
     font-size: 65px;
 }
 .nav-menu-horizontal:hover,.menu:hover{
