@@ -61,6 +61,7 @@ body {
     max-width: 12em;
     background-color: transparent;
     border: none;
+    outline:none;
 }
 .nav-menu-horizontal input:hover{
     border-bottom:1px solid rgb(255, 255, 255);
@@ -69,11 +70,12 @@ body {
 
 @media (min-width:1183px){
     .nav-container{
-      background-color: #444547;
-    }
-    .row{
+        background-color: #444547;
         display: flex;
         justify-content: center;
+    }
+    .row{
+        max-width: 1170px;
         padding: 9px 0px 9px 0px;
     }
    .nav-menu-horizontal{
@@ -94,7 +96,7 @@ body {
     .nav-menu-horizontal li{
         padding:0px 10px;
         margin-left: 10px;
-       
+        font-size: 18px;
     }
     .nav-menu-horizontal a:hover{
         color:rgb(172, 172, 172);
@@ -103,31 +105,20 @@ body {
     .menu{
         display: none;
     }
-    .a{
-        order: 1;
+    .nav-menu-horizontal input{
+        min-width: 250px;
     }
-    .b{
-        order: 2;
+    .nav-menu-horizontal .list:nth-child(6){
+        counter-increment:list 2;
+        order:7;
     }
-    .c{
-        order: 3;
+    .nav-menu-horizontal .list:nth-child(7){
+        counter-increment:list 1;
+        order:8;
     }
-    .d{
-        order: 4;
+    .nav-menu-horizontal .list:nth-child(8){
+        counter-increment:list -2;
     }
-    .search-form{
-        order: 5;
-    }
-    .e{
-        order: 6;
-    }
-    .f{
-        order: 7;
-    }
-    
-   
-  
-
 } 
     
 
