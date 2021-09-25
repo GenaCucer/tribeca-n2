@@ -8,8 +8,8 @@ body {
     background-color: #444547;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top:10px;
+    justify-content: space-around;
+    padding:10px 0px 0px 10px;
 }
 .row img{
     max-height: 70px;
@@ -23,26 +23,26 @@ body {
     padding: 2px;
     font-size: 20px;
 }
+.row a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .row2{
     display: flex;
     justify-content: center;
 }
 .nav-menu-horizontal{
     overflow-y:hidden;
-    max-height: 20px;
+    max-height: 24px;
     transition: 0.4s;
     transform: scale(1.0);
     padding-left: 20px;
     margin-top: 30px;
-    
-    
 }
 .menu{
-    color: #f1f1f19d;
-    font-size: 65px;
+    color: #fffffff3;
 }
 .nav-menu-horizontal:hover,.menu:hover{
-    max-height: 225px;
+    max-height: 240px;
     overflow-y:hidden;
     transition: all 0.6s ease;
     color:#444547;
@@ -52,13 +52,82 @@ body {
     background-color: #444547;
 }
 .nav-menu-horizontal button{
-    background: #e1e1e2;
+    background: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 0.3rem;
-    height: 22px;
-    color: #1a1919;
+    color: #ffffff;
 }
 .nav-menu-horizontal input{
-    max-width: 8em;
+    max-width: 12em;
+    background-color: transparent;
+    border: none;
 }
+.nav-menu-horizontal input:hover{
+    border-bottom:1px solid rgb(255, 255, 255);
+    transition: all 1.0s ease;
+}
+
+@media (min-width:1183px){
+    .nav-container{
+      background-color: #444547;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        padding: 9px 0px 9px 0px;
+    }
+   .nav-menu-horizontal{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; 
+        flex-wrap: nowrap; 
+        max-height:100%;
+        padding: 0px 40px 6px;
+        margin: 0 auto;
+        transition:none;
+        transform:none;
+    }
+    .row img{
+        max-height: 30px;
+    }
+    .nav-menu-horizontal li{
+        padding:0px 10px;
+        margin-left: 10px;
+       
+    }
+    .nav-menu-horizontal a:hover{
+        color:rgb(172, 172, 172);
+        transition: all 0.2s ease;
+    }
+    .menu{
+        display: none;
+    }
+    .a{
+        order: 1;
+    }
+    .b{
+        order: 2;
+    }
+    .c{
+        order: 3;
+    }
+    .d{
+        order: 4;
+    }
+    .search-form{
+        order: 5;
+    }
+    .e{
+        order: 6;
+    }
+    .f{
+        order: 7;
+    }
+    
+   
+  
+
+} 
+    
+
