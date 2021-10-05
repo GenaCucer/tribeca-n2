@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/iconfa.css">
+     <link rel="stylesheet" href="css/iconfa.css">
     <link rel="stylesheet" href="main.css">
     <title>Tribeca</title>
 </head>
@@ -35,6 +35,7 @@
  <header>
         <div class="container-header">
             <img src="images/full_Beetlejuice-1.png">
+        <div class="shadow"></div>
               <div class="container-text">
                     <div class="row-header-left">
                         <a href="https://tribecafilm.com/">Home</a>
@@ -46,14 +47,15 @@
                     </div>
                     <div class="row-header-right">
                         <a class="pull-right" href="https://tribecafilm.com/festival">
-                            Festival Guide</a> 
+                            <i class="fas fa-angle-left"></i> Festival Guide</a> 
                     </div> 
              </div> 
         </div> 
  </header> 
-<!--    <main>
+   <main>
             <div class="white-zone">
-                <div class="left-wzone">
+                <div class="white-zone__left__right">
+                <div class="white-zone__left">
                     <div class="FilmSubtitle">
                         <span> FEATURE |</span>
                         <span> United States |</span>
@@ -61,23 +63,7 @@
                         <span> English |</span>
                     </div>
                          <h1 class="heading-1-FilmTitle">BEETLEJUICE</h1>
-                    <div class="Screenings">
-                        <h2 class="FilmSectionTitle">Choose a screening time</h2>
-                            <div class="Screening--green">
-                                <div class="ScreeningContent">
-                                    <div class="date-venue">
-                                         <div class="ScreeningDate"> Sun July 26 - 9:45 PM </div>
-                                            <a class="ScreeningVenue" href="https://www.google.com/maps?q=One+AT%26T+Way+Arlington+TX+76011" target="_blank">AT&amp;T Stadium</a>
-                                    </div>
-                                         <div class="ScreeningPrice">
-                                            <div class="date-passed">
-                                                <span>DATE PASSED</span>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                    </div>
-                        <div class="FilmGenres"><span>Comedy</span></div>
+                     <div class="FilmGenres"><span>Comedy</span></div>
                         <div class="FilmSynopsis">A happy couple with a lovely country house die in a
                                             car accident and must haunt their old home while waiting to be processed
                                             into heaven. Too nice to be scary, they befriend the new tenant's daughter.
@@ -88,7 +74,25 @@
                         <div class="image-main">
                             <img src="images/full_Beetlejuice-2.png">
                         </div>
+                    </div>
+                    <div class="Screenings">
+                        <h2 class="FilmSectionTitle">Choose a screening time</h2>
+                            <div class="Screening--green">
+                                   <div class="date-venue">
+                                         <div class="ScreeningDate"> Sun July 26 - 9:45 PM </div>
+                                         <i class="fas fa-map-marker-alt"></i>
+                                          <a class="ScreeningVenue" href="https://www.google.com/maps?q=One+AT%26T+Way+Arlington+TX+76011" target="_blank">AT&amp;T Stadium</a>
+                                    </div>
+                                     <div class="ScreeningPrice">
+                                            <div class="date-passed">
+                                                <span>DATE PASSED</span>
+                                            </div>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                         <div class="end-bloc-main">
+                            
                             <hr class="hr-line">
                              <h2 class="FilmSectionTitle">CAST &amp; CREDITS</h2>
                              <div class="FilmSectionBlocks">
@@ -127,17 +131,19 @@
                                             </div>
                                 </div>
                         </div>
-                    </div>
+                    
             </div>
     </main>
-    <div class="footer"> 
+ <div class="footer"> 
      <div class="footer-zona1">
             <div class="links-footer">
                 <div class="logo-footer"> 
                         <a class="logo-footer-a" href="https://tribecafilm.com/">
                         <img class="logo-footer-a" alt="Tribeca logo white" src="https://www.tribecafilm.com/images/logo-tribeca-white.svg"></a> 
                 </div>
+                <div class="links-footer__nav">
                         <div class="footer-nav">
+                            <hr class="hr-line-footer">
                              <div class="accordion">ABOUT</div>
                              <div class="accordion-panel">
                                   <ul>
@@ -150,6 +156,7 @@
                             </div>
                         </div>
                              <div class="footer-nav">
+                                <hr class="hr-line-footer">
                                 <div class="accordion">INDUSTRY</div>
                                     <div class="accordion-panel">
                                         <div class="accordion-panel">
@@ -163,6 +170,7 @@
                                     </div>
                              </div>
                              <div class="footer-nav">
+                                <hr class="hr-line-footer">
                                     <div class="accordion">PRESS</div>
                                         <div class="accordion-panel">
                                             <ul>
@@ -174,6 +182,7 @@
                                         </div>
                               </div>
                               <div class="footer-nav">
+                                <hr class="hr-line-footer">
                                     <div class="accordion">PARTNERSHIPS</div>
                                     <div class="accordion-panel">
                                         <ul>
@@ -183,6 +192,7 @@
                                     </div>
                               </div>
                                     <div class="footer-nav">
+                                        <hr class="hr-line-footer">
                                         <div class="accordion last">ARCHIVE</div>
                                             <div class="accordion-panel">
                                                  <ul>
@@ -192,15 +202,18 @@
                                                     </ul>
                                             </div>
                                     </div>
+                                    <hr class="hr-line-footer">
+                                </div>
             </div>
                     <div class="social">
-                        <div>
-                           <a class="Twitter" href="http://twitter.com/tribeca" target="_blank">Twitter</a>
-                           <a class="Facebook" href="http://twitter.com/tribeca" target="_blank">Facebook</a>
+                        <div class="social-block">
+                           <a class="Twitter" href="http://twitter.com/tribeca" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                           <a class="Facebook" href="http://twitter.com/tribeca" target="_blank"><i class="fab fa-facebook"></i></a>
                         </div>
-                        <div>
-                           <a class="Youtube" href="https://www.youtube.com/channel/UCFUkZ2GHOziKjk8dwOT45fQ" target="_blank">Youtube</a>
-                           <a class="Instagram" href="http://instagram.com/tribeca" target="_blank">Instagram</a>
+                        <div class="social-block">
+                           <a class="Youtube" href="https://www.youtube.com/channel/UCFUkZ2GHOziKjk8dwOT45fQ" target="_blank"><i class="fab fa-youtube"></i>
+                           </a>
+                           <a class="Instagram" href="http://instagram.com/tribeca" target="_blank"><i class="fab fa-instagram-square"></i></a>
                         </div>
                     </div>
                     <div class="tribeca-links">
